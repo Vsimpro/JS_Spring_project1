@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+   
+
+#grad {
+    background-color: #7a9e9f;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    border: 1px;
+    border-radius: 8px;
+}
+
+body {
+    text-align: center;
+    font-family:sans-serif;
+    background-color:#b8d8d8;
+}
+
+h1 {
+    font-style: oblique;
+}
+
+input[type=text] {
+    text-align: center;
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #eef5db;
+}
+input[type=submit] {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fe5f55;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
