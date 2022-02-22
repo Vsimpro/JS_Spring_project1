@@ -6,20 +6,32 @@
 #grad {
     background-color: #7a9e9f;
     padding-top: 10%;
-    padding-bottom: 30%;
-    border: 1px;
+    padding-bottom: 10%;
+    border: 0.1px solid #4f6367;
     border-radius: 8px;
+    box-shadow: 8px 8px #4f6367;
 }
 
 body {
     text-align: center;
     font-family:sans-serif;
     background-color:#b8d8d8;
+    padding: 15%;
+    padding-top: 1%;
+    
+}
+
+div {
+    padding: 3%;
 }
 
 h1 {
     font-style: oblique;
+    color:#eef5db;
+    text-shadow: 2px 2px black;
+    
 }
+
 
 input[type=text] {
     text-align: center;
@@ -38,6 +50,7 @@ input[type=submit] {
     padding-top: 8px;
     padding-bottom: 8px;
     background-color: #fe5f55;
-    border: 1px solid #ccc;
+    border: 1px solid #d45147;
+    box-shadow: 3px 2px #83312bb6;
     border-radius: 12px;
 }
