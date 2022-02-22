@@ -21,8 +21,23 @@ for (i = 0; i < close.length; i++) {
 }
 
 function error() {
-    alert("New task can't be blank!")  
+    var border = document.getElementById("grad")
+    var txt = document.getElementById("errormsg")
+    border.style.borderColor = "red";
+    txt.style.color = "red";
+    txt.style.textShadow = "1px 1px black";
 }
+
+function notError() {
+    // This is some mad bubblegum but hey, as long as it works.
+    var element = document.getElementById("grad")
+    var txt = document.getElementById("errormsg")
+    element.style.borderColor = "#4f6367";
+    txt.style.color = "#7a9e9f";
+    txt.style.textShadow = "1px 1px #7a9e9f";
+
+}
+
 
 function validateForm(){
     var li = document.createElement("li");
@@ -31,9 +46,10 @@ function validateForm(){
     
     li.appendChild(user);
     if(inputVal == "") {
-        error()
+        error();
     } else {
-        document.getElementById("tasks").appendChild(li)
+        document.getElementById("tasks").appendChild(li);
+        notError();
     }
     
     document.getElementById("myTask").value = "";
