@@ -9,10 +9,12 @@
     <div id="grad">
         <div>
         <h1> TO-DO LIST </h1>
-        <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-            <label for="newTask"> </label>
-            <input type="text" name="newTask" placeholder=" new task..."> </input>
-            <input type="submit" value="add">
+            <input type="text" id="myTask" name="newTask" placeholder=" new task..."> </input>
+            <span onclick="validateForm()"> add </span>
+
+            <ul id="tasks">
+                <li> task 1</li>
+            </ul>
         </div>
     </div>
     </body>

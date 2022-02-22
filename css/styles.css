@@ -42,7 +42,7 @@ input[type=text] {
     border-radius: 12px;
     background-color: #eef5db;
 }
-input[type=submit] {
+span {
     text-align: center;
     font-style: oblique;
     font-weight: bolder;
