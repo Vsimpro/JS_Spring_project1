@@ -56,8 +56,15 @@ span {
 }
 
 li {
-    padding: 2%;
+    padding: 1%;
     list-style: none;
+    background-color: #eef5db;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    box-shadow: 4px 4px #4f6367;
+    border-radius: 12px;
 }
 
 
