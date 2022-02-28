@@ -1,17 +1,6 @@
 
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-    clearError()
-  }
-  
-}
-
+// In the case new task field is left blank,
+// shoot out a visible error.
 function error() {
     var border = document.getElementById("grad")
     var txt = document.getElementById("errormsg")    
@@ -24,6 +13,7 @@ function error() {
 
   }
 
+// does the exact opposite of error()
 function clearError() {
     // This is some mad bubblegum but hey, as long as it works.
     var element = document.getElementById("grad")
@@ -34,7 +24,7 @@ function clearError() {
 
 }
 
-
+// validate the form, and add the task to the list accordingly.
 function validateForm(){
     var li = document.createElement("li");
     var inputVal = document.getElementById("myTask").value;
@@ -42,9 +32,11 @@ function validateForm(){
     
     li.appendChild(user);
     if(inputVal == "") {
+        // new task empty, catch error
         error();
     } else {
         document.getElementById("tasks").appendChild(li);
+        // new task valid, clear error
         clearError();
     }
     
@@ -58,9 +50,16 @@ function validateForm(){
   
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
-          var div = this.parentElement;
-          div.style.display = "none";
+          this.parentElement.style.display = "none";
         }
-      }
-    
+      }   
+}
+
+// clear selected task from the list
+var close = document.getElementsByClassName("close");
+for (var i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    this.parentElement.style.display = "none";
+    clearError()
+  }
 }
