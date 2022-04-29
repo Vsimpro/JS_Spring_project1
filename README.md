@@ -4,7 +4,7 @@ Our application is a ToDo -list.
 
 Links;
 - Netlify; https://priceless-hopper-2de498.netlify.app
-- Selfhosting; https://pojjaat.app
+- Selfhosting; https://todo.pojjaat.app
 
 Doned byy:
 * Tuomas Sarajärvi
